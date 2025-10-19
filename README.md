@@ -1,8 +1,8 @@
-# Lua Bytecode Deobfuscation (Prototype)
+# Lua Bytecode Deobfuscation
 
 This repository contains a prototype Lua bytecode deobfuscation toolkit focused on control-flow cleanup at the Lua ASM text level. It is intended for study and reference only and is not a turn‑key tool.
 
-## Core idea (high level)
+## Core idea
 - Parse a textual Lua ASM listing into instructions and build basic blocks.
 - Track control-flow edges (direct jumps and conditional branches) and identify “garbage” or invalid blocks.
 - Perform small, targeted deobfuscations:
